@@ -18,8 +18,8 @@ AS
 			WHERE apl.PlaceType = 'Shop'
 			AND (e.ID = @Id OR ap.Name = @Name OR ap.Surname = @Surname))
 
-SELECT * FROM fnEmployeesByIDNameOrSurname (67 ,null, null) 
-SELECT * FROM fnEmployeesByIDNameOrSurname (null , null, 'Warren')--you need to specify three parameters,
+SELECT * FROM fnEmployeesByIDNameOrSurname (1 ,null, null) 
+SELECT * FROM fnEmployeesByIDNameOrSurname (null , null, 'Fitz')--you need to specify three parameters,
 --but there can be nulls or some default values, you/or some API need to provide one correct to find 
 --a matching record
 
