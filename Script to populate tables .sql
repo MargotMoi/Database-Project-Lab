@@ -242,3 +242,4 @@ VALUES (1,11.34, 15.45, 'Charger', 1),
 		(3,380,500, 'Headphones Light', 3),
         (3,1280,2000, 'Headphones Xtreme', 3)
 	  
+	  
