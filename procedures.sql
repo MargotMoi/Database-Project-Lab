@@ -54,11 +54,11 @@ CREATE PROC spInsertEmployees
 
  exec spInsertEmployees 
  @PersonType = 'Employee',
- @Name = 'Sophia',
- @Surname = 'Warren',
- @DateOfBirth = '1990-12-12',
+ @Name = 'Nora',
+ @Surname = 'Biden',
+ @DateOfBirth = '1990-01-02',
  @Gender = 'F',
- @Email = 'sophia.alice.warren@coffevestore.com'
+ @Email = 'nora.biden@coffevestore.com'
 
 --SELECT * FROM AssociatedPersons
 --WHERE PersonType = 'Employee' AND Name ='Sophia' AND Surname = 'Warren'
