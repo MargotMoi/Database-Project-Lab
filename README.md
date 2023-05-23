@@ -2,7 +2,14 @@
 
 Hello :)
 
-You may also check video short description:
+You may also check video short description:click down arrow on the right upper corner (download raw file).
+
+Or follow YoutTube link below:
+
+Go to GitHub Readme project short description.mp4 file in this repository
+and click down arrow on the right upper corner (download raw file).
+
+Or follow YoutTube link below:
 
 https://youtu.be/fWnZMhNyLS4
 
