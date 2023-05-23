@@ -2,7 +2,9 @@
 
 Hello :)
 
-Please also check video short description added to this repository (mp4 file).
+You may also check video short description:
+
+https://youtu.be/fWnZMhNyLS4
 
 
 In this repository you will find files representing the whole "path" I went through while participating in Database Project Lab
