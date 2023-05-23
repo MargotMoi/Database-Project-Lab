@@ -2,6 +2,9 @@
 
 Hello :)
 
+Please also check video short description added to this repository (mp4 file).
+
+
 In this repository you will find files representing the whole "path" I went through while participating in Database Project Lab
 This project was a simulation of "real-life" process in SeftServe company.
 
