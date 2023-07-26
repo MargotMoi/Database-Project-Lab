@@ -1,4 +1,3 @@
-
 CREATE TABLE [dbo].[AssociatedPersons](
 	[ID] [int] IDENTITY(1,1) NOT NULL,
 	[PersonType] [varchar](30) NOT NULL,
@@ -119,28 +118,43 @@ INSERT INTO AssociatedPersons ( PersonType, Name, Surname, DateOfBirth, Gender, 
 						('Customer', 'Joanna', 'Chmielewska', '1971-03-23', 'F',null),
 						('Customer', 'Evelyn', 'Carter', '2001-10-01', 'F',null),
 						('Customer', 'Anna', 'Lenox', '1999-09-20', 'F',null)
+INSERT INTO AssociatedPersons ( PersonType, Name, Surname, DateOfBirth, Gender, Email)
+			VALUES ('Employee', 'Anna', 'Sally', '1990-01-12', 'F','anna.sally@coffevestore.com')
+INSERT INTO AssociatedPersons ( PersonType, Name, Surname, DateOfBirth, Gender, Email)
+			VALUES ('Employee', 'Tom', 'Warren', '1990-01-11', 'F','tom.warren@coffevestore.com')
+INSERT INTO AssociatedPersons ( PersonType, Name, Surname, DateOfBirth, Gender, Email)
+			VALUES ('Employee', 'Luize', 'Lebeuf', '1986-08-11', 'F','luize.lebeuf@coffevestore.com')
 						
 	INSERT INTO Employees (AssociatedPersonID, DepartmentID, ManagerID, Position, ContractStart, ContractEnd, Salary, AssociatedPlaceID)
-				VALUES (1, 1, null, 'manager', '2023-01-01', null, 12000, 1),
+				VALUES (1, 1, 21, 'manager', '2023-01-01', null, 12000, 1),
 						(2, 1, 1, 'salesperson', '2023-01-01', null, 6000, 1),
-						(3, 1, null, 'manager', '2023-01-02', null, 13000, 2),
+						(3, 1, 21, 'manager', '2023-01-02', null, 13000, 2),
 						(4, 1, 3, 'salesperson', '2023-01-03', null, 6100, 2),
-						(5, 1, null, 'manager', '2023-01-01', null, 12500, 3),
+						(5, 1, 21, 'manager', '2023-01-01', null, 12500, 3),
 						(6, 1, 5, 'salesperson', '2023-01-05', null, 5900, 3),
-						(7, 1, null, 'manager', '2023-01-02', null, 12700, 4),
+						(7, 1, 21, 'manager', '2023-01-02', null, 12700, 4),
 						(8, 1, 7, 'salesperson', '2023-01-02', null, 7400, 4),
-						(9, 1, null, 'manager', '2023-01-01', null, 14000, 5),
+						(9, 1, 21, 'manager', '2023-01-01', null, 14000, 5),
 						(10, 1, 9, 'salesperson', '2023-01-06', null, 5000, 5),
-						(11, 1, null, 'manager', '2023-01-01', null, 11000, 6),
+						(11, 1, 21, 'manager', '2023-01-01', null, 11000, 6),
 						(12, 1, 11, 'salesperson', '2023-01-02', null, 7100, 6),
-						(13, 1, null, 'manager', '2023-01-01', null, 12100, 7),
+						(13, 1, 21, 'manager', '2023-01-01', null, 12100, 7),
 						(14, 1, 13, 'salesperson', '2023-01-05', null, 6900, 7),
-						(15, 1, null, 'manager', '2023-01-03', null, 15000, 8),
+						(15, 1, 21, 'manager', '2023-01-03', null, 15000, 8),
 						(16, 1, 15, 'salesperson', '2023-01-03', null, 8000, 8),
-						(17, 1, null, 'manager', '2023-01-01', null, 12900, 9),
+						(17, 1, 21, 'manager', '2023-01-01', null, 12900, 9),
 						(18, 1, 17, 'salesperson', '2023-01-01', null, 7100, 9),
-						(19, 1, null, 'manager', '2023-01-02', null, 11800, 10),
-						(20, 1, 19, 'salesperson', '2023-01-02', null, 12000, 10)	
+						(19, 1, 21, 'manager', '2023-01-02', null, 11800, 10),
+						(20, 1, 19, 'salesperson', '2023-01-02', null, 12000, 10)
+INSERT INTO Employees (AssociatedPersonID, DepartmentID, ManagerID, Position, ContractStart, ContractEnd, Salary, AssociatedPlaceID)
+		VALUES (35, null, null, 'CEO', '2022-01-01', null, 55000, null)
+INSERT INTO Employees (AssociatedPersonID, DepartmentID, ManagerID, Position, ContractStart, ContractEnd, Salary, AssociatedPlaceID)
+		VALUES (36, 1, 2, 'sales intern', '2023-07-01', null, 3000, 1)
+INSERT INTO Employees (AssociatedPersonID, DepartmentID, ManagerID, Position, ContractStart, ContractEnd, Salary, AssociatedPlaceID)
+		VALUES (37, 3, 4, 'sales intern', '2023-07-01', null, 3000, 2)	
+
+--select * from Employees
+--select * from AssociatedPersons
 
 INSERT INTO DocumentHeaders(DocumentDate, EmployeeID, AssociatedPersonID, OriginalPlaceID, DocumentType)
 VALUES	(GETDATE() , 1 ,  21 , 1 , 'Receipt'),
@@ -241,5 +255,3 @@ VALUES (1,11.34, 15.45, 'Charger', 1),
 		(3,34.23,44.12, 'Headphones Zombie', 1),
 		(3,380,500, 'Headphones Light', 3),
         (3,1280,2000, 'Headphones Xtreme', 3)
-	  
-	  
